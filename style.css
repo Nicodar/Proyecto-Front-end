@@ -1,0 +1,109 @@
+/* generalidades*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /*background-color: black;*/
+}
+
+
+/*encabezado de la pagina */
+
+header{
+    background-color: black;
+    position: sticky;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar li{
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: white;              /* Como el fondo es negro, ponlos blancos para que se vean */
+    text-decoration: none;     /* Quita el subrayado */
+    font-weight: 700;
+}
+
+/*Seccion hero */
+.hero{
+    background-image: url(./images/mnz-ToLMORRb97Q-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.hero a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+footer h4{
+    color: white;
+    margin: 8px 0 8px 0;
+}
+
+footer p{
+    color: white;
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+
+footer .copyright, footer .follow {
+    width: 100%;
+    text-align: center;
+}
+
+footer .follow{
+    justify-content: space-between;
+
+}
+
+.follow img{
+    height: 40px;
+}
+
+
