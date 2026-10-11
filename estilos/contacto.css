@@ -1,0 +1,80 @@
+
+.formulario {
+    background-color: #f8faf9;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contactForm {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px; 
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    border: 1px solid #a4b3a6;
+}
+
+
+.texto h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.inputBox {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Pone la etiqueta arriba y el input abajo */
+    gap: 8px;
+}
+
+.inputBox label {
+    font-weight: 600;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+
+.inputBox input,
+.inputBox textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+
+.inputBox input:focus,
+.inputBox textarea:focus {
+    border-color: #cc021c; 
+}
+
+
+.contactForm button[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #cc021c;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 2em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contactForm button[type="submit"]:hover {
+    background-color: #a30216; 
+}
