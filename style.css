@@ -36,8 +36,8 @@ header{
 }
 
 .navbar a {
-    color: white;              /* Como el fondo es negro, ponlos blancos para que se vean */
-    text-decoration: none;     /* Quita el subrayado */
+    color: white;              
+    text-decoration: none;     
     font-weight: 700;
 }
 
@@ -99,23 +99,23 @@ header{
     border-radius: 20px;
     padding: 20px;
     text-align: left;
-    display: flex;             /* Pone la imagen y el bloque de texto en fila (izquierda/derecha) */
-    align-items: center;       /* Centra verticalmente la imagen con el texto */
-    gap: 15px;                 /* Espacio entre la imagen y el texto */
+    display: flex;             
+    align-items: center;       
+    gap: 15px;                 
 }
 
 .reseña-img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    object-fit: cover;         /* Evita que la foto se deforme */
-    flex-shrink: 0;            /* Evita que la imagen se achique si el texto es largo */
+    object-fit: cover;         
+    flex-shrink: 0;            
 }
 
 .reseña-content {
     display: flex;
-    flex-direction: column;    /* Pone el nombre arriba y el mensaje abajo en columna */
-    gap: 5px;                  /* Espacio entre el nombre y el mensaje */
+    flex-direction: column;    
+    gap: 5px;                  
 }
 
 .reseña-nombre {
@@ -134,40 +134,57 @@ header{
 
 /*FOOTER*/
 
-footer{
+footer {
     background-color: black;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-
-footer h4{
-    color: white;
-    margin: 8px 0 8px 0;
-}
-
-footer p{
-    color: white;
-    font-size: 13px;
-    margin: 0 0 8px 0;
-}
-
-
-footer .copyright, footer .follow {
-    width: 100%;
+    flex-direction: column;    
+    align-items: center;       
+    padding: 40px 20px 20px 20px;        
+    gap: 30px;                 
     text-align: center;
 }
 
-footer .follow{
-    justify-content: space-between;
 
+.info-column {
+    display: flex;
+    flex-direction: column;    
+    gap: 25px;                 
 }
 
-.follow i{
-    height: 40px;
-    color: rgb(51, 51, 216);
+footer h4 {
+    color: white;
+    margin: 0 0 8px 0;
+}
+
+footer p {
+    color: white;
+    font-size: 13px;
+    margin: 0 0 6px 0;
 }
 
 
+.follow ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;                 
+    margin-top: 10px;
+}
+
+.follow i {
+    font-size: 24px;           
+    color: rgb(199, 178, 178);
+    transition: color 0.3s;
+}
+
+.follow i:hover {
+    color: white;              
+}
+
+
+footer .copyright {
+    width: 100%;
+    border-top: 1px solid #333; 
+    padding-top: 20px;
+}
