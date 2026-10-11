@@ -20,7 +20,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0px 20px;
 
 }
 
@@ -80,6 +80,7 @@ footer{
 
 }
 
+
 footer h4{
     color: white;
     margin: 8px 0 8px 0;
@@ -107,3 +108,62 @@ footer .follow{
 }
 
 
+/*SECCION RESEÑAS*/
+
+.reseñas{
+    text-align: center;
+    background-color: #f8faf9;
+    padding: 30px 5%;
+    margin: 15px 0;
+}
+
+.reseñas h2 {
+    margin-bottom: 10px;
+}
+
+.reseñas > p {
+    margin-bottom: 40px; 
+}
+
+.reseñas-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.reseña-card {
+    background-color: #fff;
+    border: 1px solid #a4b3a6;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    display: flex;             /* Pone la imagen y el bloque de texto en fila (izquierda/derecha) */
+    align-items: center;       /* Centra verticalmente la imagen con el texto */
+    gap: 15px;                 /* Espacio entre la imagen y el texto */
+}
+
+.reseña-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;         /* Evita que la foto se deforme */
+    flex-shrink: 0;            /* Evita que la imagen se achique si el texto es largo */
+}
+
+.reseña-content {
+    display: flex;
+    flex-direction: column;    /* Pone el nombre arriba y el mensaje abajo en columna */
+    gap: 5px;                  /* Espacio entre el nombre y el mensaje */
+}
+
+.reseña-nombre {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.reseña-texto {
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.4;
+}
