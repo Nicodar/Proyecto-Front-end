@@ -103,8 +103,9 @@ footer .follow{
 
 }
 
-.follow img{
+.follow i{
     height: 40px;
+    color: rgb(51, 51, 216);
 }
 
 
