@@ -10,7 +10,9 @@
 
 /*ENCABEZADO DE LA PAGINA */
 
-header{
+/*version desktop*/
+
+.header-desktop{
     background-color: black;
     position: sticky;
     z-index: 1000;
@@ -39,6 +41,70 @@ header{
     text-decoration: none;     
     font-weight: 700;
 }
+
+
+
+/* Por defecto, mostramos el header de escritorio */
+.header-mobile {
+    display: none;
+}
+
+/* version mobile */
+@media (max-width: 768px) {
+    .header-desktop {
+        display: none;
+    }
+
+    .header-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 15px 20px;
+        background-color: black;
+        color: white;
+    }
+
+    .header-mobile .logo {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Ocultamos el checkbox */
+    #menu-toggle {
+        display: none;
+    }
+
+    /* Icono hamburguesa */
+    .menu-icon {
+        font-size: 28px;
+        cursor: pointer;
+        color: white;
+    }
+
+    /* Menú cerrado por defecto */
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding-top: 15px;
+    }
+
+    .mobile-nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 0;
+    }
+
+    /* Al marcar el checkbox, mostramos el menú */
+    #menu-toggle:checked ~ .mobile-nav {
+        display: flex;
+    }
+}
+
 
 /*SECCION HERO */
 
@@ -131,6 +197,7 @@ header{
 }
 
 /*media queries para hacer responsive las cards*/
+
 @media (max-width: 768px) {
     .reseñas-container {
         grid-template-columns: 1fr;
