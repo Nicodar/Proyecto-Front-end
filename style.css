@@ -1,15 +1,14 @@
-/* generalidades*/
+/* GENERALIDADES*/
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    /*background-color: black;*/
 }
 
 
-/*encabezado de la pagina */
+/*ENCABEZADO DE LA PAGINA */
 
 header{
     background-color: black;
@@ -41,7 +40,8 @@ header{
     font-weight: 700;
 }
 
-/*Seccion hero */
+/*SECCION HERO */
+
 .hero{
     background-image: url(./images/mnz-ToLMORRb97Q-unsplash.jpg);
     background-repeat: no-repeat;
@@ -128,6 +128,28 @@ header{
     font-size: 0.95rem;
     margin: 0;
     line-height: 1.4;
+}
+
+/*media queries para hacer responsive las cards*/
+@media (max-width: 768px) {
+    .reseñas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .navbar li {
+        margin-left: 0;
+    }
 }
 
 
